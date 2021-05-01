@@ -65,6 +65,48 @@ console.log(educationTeam)
 }
 console.log(globalVar)
 
+/* ejemplo 7 */
+let name = 'Oscar'
+let age = 32
+
+obj = {name:name, age: age}
+//es6
+let obj = {name, age}
+
+const square = num => num * num;
+
+const helloPromise = () => {
+    return new Promise ((resolve, reject) => {
+        if (true) {
+            resolve('Hey!')
+        } else {
+            reject('Ups!!')
+        }
+    })
+}
+
+import {externalHello} from '.module'
+
+externalHello()
+
+const condition = true
+function* generatorHello () {
+    if (condition) {
+        yield 'Hello, '
+    }
+    if (condition) {
+        yield 'World'
+    }
+}
+
+const helloWorld = generatorHello()
+
+console.log(helloWorld.next().value)
+console.log(helloWorld.next().value)
+console.log(helloWorld.next().value)
+
+
+
 
 
 
